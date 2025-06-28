@@ -1,0 +1,135 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+#root div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+#form-principal {
+  width: 500px;
+  background-color: #352d2d;
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-block-end: 1.5rem;
+}
+
+label span {
+  text-align: left;
+  font-weight: bold;
+}
+
+textarea, input {
+  border-radius: 4px;
+  border: 1px solid #cac5c5;
+  font-family: sans-serif;
+  padding: 0.6rem 0.8rem;
+}
+
+#descripcionPlaneta {
+  resize: none;
+}
+
+#guardarBtn {
+  width: 100%;
+}
+
+/* ESTILOS PARA LAS CARDS DE LOS PLANETAS */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul p {
+  max-height: 100px;
+  overflow-y: auto;
+}
+
+li {
+  width: 300px;
+  background-color: #352D2D;
+  padding: 2rem;
+}
+
+li h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+li img {
+  display: block;
+  width: 100%;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#editarBtn {
+  background-color: #4542e2;
+}
+
+#eliminarBtn {
+  background-color: #cf3838;
+}
+
+i {
+  margin-inline-end: 0.6rem;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
